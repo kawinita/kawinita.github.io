@@ -67,17 +67,17 @@ em {
 
 .site-brand {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .site-brand img {
-  width: 90px;
-  height: 90px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #e5e5e5;
 }
 
 .site-brand .name {
