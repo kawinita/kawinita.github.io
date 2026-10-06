@@ -220,3 +220,102 @@ section {
 .email-icon:hover {
   color: #800020;
 }
+
+/* Research architecture */
+
+.research-section {
+  margin: 60px 0;
+}
+
+.research-core {
+  max-width: 650px;
+  margin: 30px auto 0;
+  padding: 22px 30px;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+.research-core h3 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.research-core p {
+  margin: 0;
+}
+
+.connector {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.research-programs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.research-program {
+  border: 1px solid #aaa;
+  padding: 22px;
+  text-align: center;
+}
+
+.research-program h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.research-program p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.research-process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 5px auto 25px;
+  font-size: 0.95rem;
+}
+
+.process-arrow {
+  font-size: 1.2rem;
+}
+
+.research-lenses {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 18px;
+  border-top: 1px solid #bbb;
+  text-align: center;
+}
+
+.research-lenses strong {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.research-lenses p {
+  margin-top: 7px;
+}
+
+/* Stack the research programs on smaller screens */
+
+@media (max-width: 750px) {
+  .research-programs {
+    grid-template-columns: 1fr;
+  }
+
+  .research-process {
+    flex-direction: column;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+  }
+}
